@@ -21,7 +21,7 @@ function App() {
   }, []);
 
   const loginToSpotify = () => {
-    window.location.href = 'https://backend-2b0w.onrender.com//login';
+    window.location.href = 'https://backend-2b0w.onrender.com/login';
   };
 
   const fetchPlaylists = (token) => {
