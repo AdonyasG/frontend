@@ -6,7 +6,7 @@ function App() {
   const [accessToken, setAccessToken] = useState(null);
   const [playlists, setPlaylists] = useState([]);
   const [loading, setLoading] = useState(false);
-  const backendUrl = 'http://localhost:8000';
+  const backendUrl = 'https://backend-2b0w.onrender.com/';
   // Extract the access token from the URL after authentication
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
@@ -21,7 +21,7 @@ function App() {
   }, []);
 
   const loginToSpotify = () => {
-    window.location.href = 'http://localhost:8000/login';
+    window.location.href = 'https://backend-2b0w.onrender.com//login';
   };
 
   const fetchPlaylists = (token) => {
